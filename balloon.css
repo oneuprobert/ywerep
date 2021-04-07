@@ -1,0 +1,187 @@
+
+.cloud{
+    background-color:whitesmoke;
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+    position: absolute;
+    opacity: 1;
+    top: 4000px;
+    left: 200px;
+    
+    animation: run linear infinite;
+    animation-duration: 1000s;
+}
+
+@keyframes run {
+    0% { left: 0;}
+    50%{ left :0;}
+    100%{ left:2000px;}
+}
+
+.cloud:before{
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 100px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    bottom: 25px;
+    left: 80px;
+    opacity: .3;
+}
+
+.cloud:after{
+    position:absolute;
+    content: "";
+    height: 80px;
+    width: 80px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    bottom: 25px;
+    left: 25px;
+    opacity: .2;
+
+}
+
+.cloud:nth-child(1){
+    top: 230px;
+    left:0;
+}
+
+.cloud:nth-child(2){
+    top: 100px;
+    left: 300px;
+    transform: scale(.4);
+}
+
+.cloud:nth-child(3){
+    top: 500px;
+    left:400px;
+    opacity: .6;
+}
+
+
+.balloon{
+height:200px;
+width: 200px;
+background-color: #f7074c;
+border-radius: 50%;
+position: absolute;
+top: 3500px;
+left: 40px;
+animation: float 100s infinite;
+}
+@keyframes float{
+    50%{
+        transform: translateY(500px);
+    }
+}
+
+
+
+
+
+
+
+.balloon:before{
+    position: absolute;
+    content: "";
+    height: 200px;  
+    width: 140px;
+    background-color: #fb84a0;
+    border-radius: 50%;
+    left: 30px;
+
+
+
+
+}
+
+.balloon:after{
+    position: absolute;
+    content: "";
+    height: 200px;
+    width: 80px;
+    background: #f7074c ;
+    border-radius: 50%;
+    left: 60px;
+    top: 0;
+}
+
+.bottom{
+
+    background-color: #f7174c;
+    height: 20px;
+    width: 90px;
+    position: relative;
+    top: 188px;
+    left: 53px;
+
+
+}
+
+.basket{
+    height: 50px;
+    width: 70px;
+    background-color: #f83a66 ;
+    position: relative;
+    top: 240px;
+    left: 62.5px;
+    border-radius: 0 0 10px 10px;
+
+
+}
+
+.basket:before{
+    position: absolute;
+    content: "";
+    background-color: #f7174c;
+    height: 7px;
+    width:  80px;
+    border-radius: 7px;
+    left: -5px;
+}
+
+.rope{
+    background-color: #db343c;
+    height: 55px;
+    width: 3px;
+    position: relative;
+    top: 137px;
+    left: 96.5px;
+}
+
+.rope:before{
+    position: absolute;
+    content: "";
+    background-color: #db343c;
+    height: 55px;
+    width: 3px;
+    top: 0;
+    left: -38px;
+    transform: rotate(-8deg);
+
+}
+
+.rope:after{
+
+    position: absolute;
+    content: "";
+    background-color: #db343c;
+    height: 55px;
+    width: 3px;
+    top: 0;
+    left: 38px;
+    transform: rotate(8deg);
+}
+
+
+@keyframes cloudDrift {
+    from { transform: translateX(0px); }
+    to { transform: translateX(540px); }
+ }
+
+ .balloon{
+     margin-left: -13px;
+ }
